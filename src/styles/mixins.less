@@ -1,0 +1,51 @@
+@import './var.less';
+// 测试
+.mixins() {
+    background: #fff;
+}
+// 0.5px 边框
+.border-half() {
+    &:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        border-bottom: solid 1px @borderColor;
+        transform: scaleY(0.5);
+    }
+}
+// 清除浮动
+.clear-both() {
+    &::before {
+        display: table;
+        content: '';
+    }
+    &::after {
+        clear: both;
+    }
+}
+// flex-row
+.flex-row() {
+    display: flex;
+    flex-direction: row;
+}
+// flex-col
+.flex-col() {
+    display: flex;
+    flex-direction: column;
+}
+// hover 变大
+.big-hover(){
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+// background 全覆盖通用
+.bg-cover(){
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}

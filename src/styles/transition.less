@@ -1,0 +1,53 @@
+// 面包屑 transtion
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+    transition: all 0.5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.breadcrumb-move {
+    transition: all 0.5s;
+}
+
+.breadcrumb-leave-active,
+.breadcrumb-enter-active {
+    position: absolute;
+}
+// tags transitions
+
+.tags-enter-active,
+.tags-leave-active {
+    transition: all 0.5s;
+}
+.tags-enter,
+.tags-leave-active {
+    opacity: 0;
+    transform: translateX(20px);
+}
+.tags-move {
+    transition: all 0.5s;
+}
+// routerChange transitions
+
+.routerChange-enter-active,
+.routerChange-leave-active {
+    transition: all 0.5s;
+}
+.routerChange-enter,
+.routerChange-leave-to {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+.routerChange-enter-to,
+.routerChange-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+.routerChange-leave-active {
+    display: none;
+}
