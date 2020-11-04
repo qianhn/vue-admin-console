@@ -1,7 +1,7 @@
 <!--
  * @Author: qianhn@neusoft.com
  * @Date: 2020年10月26日13时08分33秒
- * @LastEditTime: 2020年11月03日17时57分30秒
+ * @LastEditTime: 2020年11月04日09时11分20秒
  * @LastEditors: Please set LastEditors
  * @Description: 
  * @多读书多看报少吃零食多睡觉
@@ -64,25 +64,6 @@ npm run test:unit
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 支持 stylus
-
-### 云打版 (手动打版)
-
-```
-npm run build
-cd dist
-git init
-git add .
-git commit -m "commit message"
-git branch cloud
-git remote add origin git ssh://git@manager.ihrss.neusoft.com:7003/cloud-h5-new/v-h5-pc.git
-git push -f -u origin cloud 
-```
-
-### 云打版 (jenkins 打版)
-
-```
-https://manager.ihrss.neusoft.com:9990/jenkins/
-```
 
 
 ##  注意习惯 
